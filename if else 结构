@@ -1,0 +1,19 @@
+#判断闰年的写法，能被4整除且不被100整除 ，或者能被400整除
+
+year = int(input("请输入你想的年份："))
+
+if(year % 400 == 0 or ( year % 4 == 0 and year % 100  !=0)):
+    print(str.format("{0}年是闰年",year))
+
+else:print(str.format("{0}年不为闰年",year))
+
+a = int(input("请输入年份："))
+#写法二
+if(a % 400 == 0):print(str.format("{0}为闰年",a))
+else :
+    if(a % 4 == 0):
+        if(a % 100 != 0):
+            print(str.format("{0}为闰年",a))
+
+    #下面的else只能和上面的if一一匹配
+    else:print(str.format("{0}不为闰年",a))
