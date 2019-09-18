@@ -1,0 +1,10 @@
+## 熟悉python的math调用方法,已知三角形三边a,b,c求三角形面积,利用s=sqrt(h*(h-a)*(h-b)*(h-c)),h=(a+b+c)/2
+
+import math
+a = float(input("请输入三角形边a:"))
+b =float(input("请输入三角形边b:"))
+c =float(input("请输入三角形边c:"))
+h = (a + b + c ) / 2
+area = math.sqrt(h*(h-a)*(h-b)*(h-c))
+print(str.format("三角形三边为a:{0},b={1},c={2}",a,b,c))
+print(str.format("三角形面积为{0}",area))
